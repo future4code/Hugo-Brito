@@ -1,0 +1,2 @@
+# Semana Hard
+**A semana foi hard para mim, o sentimento de desistência era constante ao final do dia, uma sensação muito ruim.** Mas com a ajuda dos **Lovelacers**, a semana ficou um pouco mais leve mesmo que a sensação ainda era de derrota. Obtive um pouco mais de experiência com GitBash e GitHub (mais chatos que o babyshark, haha), também teve o VScode e entre outras plataformas. Agora é ver o que acontece na segunda semana.
