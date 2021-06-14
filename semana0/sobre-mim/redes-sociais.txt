@@ -1,6 +1,0 @@
-1 - instagram
-2 - whatsapp
-3 - telegram
-4 - clubhouse
-5 - Slack
-6 - Discord
