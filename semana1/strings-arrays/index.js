@@ -94,6 +94,33 @@
 
 
 
+// Desafio
+
+// #1
+
+// let frase = prompt("Diga uma frase legal:")
+
+// let semEspaco = frase.trim().split('')
+
+// console.log (semEspaco)
+
+// #2
+
+// const frutas = ["Banana", "Morango", "Abacaxi", "Laranja", "Ameixa"]
+
+// const alteraFrutas = frutas.indexOf('Abacaxi')
+
+// console.log('A palavra Abacaxi está no indice', alteraFrutas , 'O Tamanho da Array é', frutas.length)
+
+
+
+
+
+
+
+
+
+
 
 
 

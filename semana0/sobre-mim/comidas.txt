@@ -1,0 +1,10 @@
+1 - Bife a Perggiana
+2 - Torresmo
+3 - Quibe
+4 - hamburger
+5 - Feijão tropeiro
+6 - Sushi
+7 - Picanha
+8 - Coxinha
+9 - Emapadão
+10  Cookie
