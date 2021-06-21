@@ -172,6 +172,124 @@
 
 
 
+// Desafio
+
+// function user1() {
+
+//     const nome =  prompt('Digite seu nome: ')
+//     const idade = Number(prompt('Digite sua idade: '))
+//     const profissao = prompt('Digite sua profissão: ')
+    
+//     const objeto = {
+
+//         nome: nome,
+//         idade: idade,
+//         profissao: profissao
+
+//     }
+    
+//     console.log(objeto)
+// }
+
+// user1()
+
+// #2
+
+// function movies() {
+
+//     const movie1 = {
+
+//         anoDeLancamento: 2021,
+//         nomeDoFilme: "Barbie"
+
+//     }
+
+//     const movie2 = {
+
+//         anoDeLancamento: 2018,
+//         nomeDoFilme: "Tarzan"
+
+//     }
+
+//     const comparacao = movie1.anoDeLancamento < movie2.anoDeLancamento
+//     const comparacao2 = movie1.anoDeLancamento === movie2.anoDeLancamento
+
+//     console.log(comparacao)
+//     console.log(comparacao2)  
+// }
+
+// movies()
+
+// #3
+
+// const carrinho = [] 
+
+// const objeto1 = {
+
+//     nome: 'banana',
+//     disponibilidade: true
+
+// }
+
+// const objeto2 = {
+
+//     nome: 'kiwi',
+//     disponibilidade: true
+
+// }
+
+// const objeto3 = {
+
+//     nome: 'laranja',
+//     disponibilidade: true
+
+// }
+
+// function carrinhoPronto(fruta) {
+
+//     carrinho.push(fruta)
+
+// }
+
+// carrinhoPronto(objeto1)
+// carrinhoPronto(objeto2)
+// carrinhoPronto(objeto3)
+
+// console.log(carrinho)
+
+
+// const controleEstoque = (fruta) => {
+     
+//     const fruta2 = {...objeto3, disponibilidade: false}
+//     console.log(fruta2)
+
+    
+// }
+// controleEstoque()
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
