@@ -11,39 +11,45 @@
  * 
  */
 
-    console.log('Boas vindas ao jogo BlackJack')
+console.log('Boas vindas ao jogo BlackJack')
 
-    if(confirm('Deseja iniciar uma nova rodada ?')) {
+if (confirm('Deseja iniciar uma nova rodada ?')) {
 
-      let cardUser = [comprarCarta(), comprarCarta()]
+   let cardUser = [comprarCarta(), comprarCarta()]
 
-      if(cardUser[0].valor && cardUser[1].valor === 11){
-         cardUser = [comprarCarta(), comprarCarta()]
-
-
-      }
-      let sumCardUser = cardUser[0].valor + cardUser[1].valor
-
-      let cardPC = [comprarCarta(), comprarCarta()]
-
-      if(cardPC[0].valor && cardPC[1].valor === 11){
-         cardPc = [comprarCarta(), comprarCarta()]
-
-      }
-      let sumCardPC = cardPC[0].valor + cardPC[1].valor
-
-         console.log(`Usuaário - cartas: ${cardUser[0].texto} ${cardUser[1].valor} - pontuação ${sumCardUser}`)
-
-         console.log(`Usuaário - cartas: ${cardPC[0].texto} ${cardPC[1].valor} - pontuação ${sumCardPC}`)
+   if (cardUser[0].valor && cardUser[1].valor === 11) {
+      cardUser = [comprarCarta(), comprarCarta()]
 
 
+   }
+   let sumCardUser = cardUser[0].valor + cardUser[1].valor
 
+   let cardPC = [comprarCarta(), comprarCarta()]
 
+   if (cardPC[0].valor && cardPC[1].valor === 11) {
+      cardPc = [comprarCarta(), comprarCarta()]
 
+   }
+   let sumCardPC = cardPC[0].valor + cardPC[1].valor
 
+   console.log(`Usuaário - cartas: ${cardUser[0].texto} ${cardUser[1].valor} - pontuação ${sumCardUser}`)
 
+   console.log(`Usuaário - cartas: ${cardPC[0].texto} ${cardPC[1].valor} - pontuação ${sumCardPC}`)
 
-    }else{
-       console.log('O jogo acabou')
+   if (sumCardUser > sumCardPC) {
 
-    }
+      console.log('Usuário ganha')
+
+   } else if (sumCardUser < sumCardPC) {
+
+      console.log('Computador ganha')
+
+   } else if (sumCardUser === sumCardPC) {
+
+      console.log('Empate')
+
+   } else {
+
+      console.log('O jogo acabou')
+   }
+}
