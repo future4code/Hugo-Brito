@@ -100,7 +100,7 @@ function retornaNNumerosPares(n) {
 
   let numberX = 0
   let i = 0
-  while(i <i){
+  while(i <n){
 
     i++
     numberN.push(numberX)
@@ -131,9 +131,6 @@ function checaTriangulo(a, b, c) {
 
   }
 
-  
-
-
 }
 
 // EXERCÍCIO 09
@@ -144,16 +141,34 @@ function comparaDoisNumeros(num1, num2) {
   //   maiorDivisivelPorMenor: Y,
   //   diferenca: Z
   // }
+
+  return {
+    maiorNumero: Math.max(num1, num2),
+  
+    maiorDivisivelPorMenor: Math.max(num1, num2) % Math.min(num1, num2) === 0,
+  
+    diferenca: Math.max(num1, num2) - Math.min(num1, num2)
+    
+  }
 }
+  
 
 // EXERCÍCIO 10
 function segundoMaiorEMenor(array) {
 
+  
+
+
 }
+
+
+
+
 
 // EXERCÍCIO 11
 function ordenaArray(array) {
 
+  
 }
 
 // EXERCÍCIO 12
