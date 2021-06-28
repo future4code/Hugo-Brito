@@ -74,16 +74,40 @@ function retornaQuantidadeElementos(array) {
 // EXERCÍCIO 06
 function retornaExpressoesBooleanas() {
 
-  if(booleano1 && booleano2 && !booleano4){
+  const booleano1 = true
+  const booleano2 = false
+  const booleano3 = !booleano2 
+  const booleano4 = !booleano3
 
-    retun true
-  }
-  
+  const letraA = booleano1 && booleano2 && !booleano4
+  const LetraB = (booleano1 && booleano2) || !booleano3
+  const letraC = (booleano2 || booleano3) && (booleano4 || booleano1)
+  const letraD = !(booleano2 && booleano3) || !(booleano1 && booleano3)
+  const letraE = !(booleano1) && !(booleano3) || (!booleano4 && booleano3 && booleano3)
+
+  const respostas = [letraA, LetraB, letraC, letraD, letraE]
+
+  return respostas
 
 }
 
+ 
+
 // EXERCÍCIO 07
 function retornaNNumerosPares(n) {
+
+  const numberN = []
+
+  let numberX = 0
+  let i = 0
+  while(i <i){
+
+    i++
+    numberN.push(numberX)
+    numberX += 2
+  }
+  return numberN
+
 
 }
 
@@ -92,6 +116,8 @@ function checaTriangulo(a, b, c) {
   // return 'Escaleno'
   // return 'Equilátero'
   // return 'Isósceles'
+
+  
 }
 
 // EXERCÍCIO 09
