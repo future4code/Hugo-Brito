@@ -156,7 +156,7 @@ function comparaDoisNumeros(num1, num2) {
 // EXERCÍCIO 10
 function segundoMaiorEMenor(array) {
 
-  
+
 
 
 }
@@ -167,23 +167,49 @@ function segundoMaiorEMenor(array) {
 
 // EXERCÍCIO 11
 function ordenaArray(array) {
+   
+  array.sort((a,b) => a - b)
+  return array
 
-  
-}
+ }
 
 // EXERCÍCIO 12
 function filmeFavorito() {
+
+  return {
+
+    nome: "O Diabo Veste Prada",
+    ano: 2006,
+    diretor: "David Frankel",
+    atores: ["Meryl Streep", "Anne Hathaway", "Emily Blunt", "Stanley Tucci"]
+
+}
 
 }
 
 // EXERCÍCIO 13
 function imprimeChamada() {
   // "Venha assistir ao filme NOME_DO_FILME, de ANO, dirigido por DIRECAO e estrelado por ELENCO."
+
+    const objeto = {
+    nome: "O Diabo Veste Prada",
+    ano: 2006,
+    diretor: "David Frankel",
+    atores: [" Meryl Streep ", " Anne Hathaway" , " Emily Blunt" , " Stanley Tucci."]
+  }
+  return `Venha assistir ao filme ${objeto.nome}, de ${objeto.ano}, dirigido por ${objeto.diretor} e estrelado por ${objeto.atores}`
 }
+
+
+
+
+
+
 
 // EXERCÍCIO 14
 function criaRetangulo(lado1, lado2) {
-
+      
+  
 }
 
 // EXERCÍCIO 15
@@ -203,8 +229,12 @@ function menoresDe18(arrayDePessoas) {
 
 // EXERCÍCIO 17A
 function multiplicaArrayPor2(array) {
-
+ 
+ 
 }
+
+
+
 
 // EXERCÍCIO 17B
 function multiplicaArrayPor2S(array) {
