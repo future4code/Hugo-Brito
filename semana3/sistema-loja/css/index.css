@@ -1,0 +1,17 @@
+.div-Bem-vindo {
+ 
+    background-color: lightsteelblue
+
+
+}
+
+* {
+    background-color: lightsteelblue;
+}
+
+.img{
+    height: 150px;
+    width: 150px;
+    padding-right: 58px;
+}
+
