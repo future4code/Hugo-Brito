@@ -169,8 +169,11 @@ td img {
     border-radius: 5px;
     font-size: 10px;
     color: black;
+    position: absolute;
+    left: 700px;
+    bottom: 300px;
 }
 
 #back-button:hover {
-    background-color: #635a3d
+    background-color: #bea552
 }
