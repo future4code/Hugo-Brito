@@ -23,6 +23,7 @@ input {
 
 button:focus {
     color: white;
+
 }
 
 img {
@@ -123,6 +124,18 @@ td button {
     border-radius: 5px;
     color: black;
 }
+
+td button:hover {
+    background-color: #d1b32d;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+    
+}
+
+
+
 
 td img {
 
