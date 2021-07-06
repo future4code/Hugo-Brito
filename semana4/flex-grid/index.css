@@ -66,6 +66,21 @@ body {
     
     margin-left: 20px;
     height: 18px;
+
+}
+
+.bolo{
+
+    height: 200px;
+    display: grid;
+    margin-left: 600px;
+}
+
+nav{
+    background-color: #f2d0e0;
+    width: 200px;
+    padding: 10px;
+
 }
 
 footer {
@@ -78,5 +93,11 @@ footer {
     justify-content: center;
     align-items: center;
 
-
 }
+
+
+
+
+
+
+
