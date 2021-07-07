@@ -11,6 +11,7 @@ header {
     align-items: center;
     padding: 0 20px;
     grid-column: 1 / 3;
+    grid-row: 1/2;
   
   }
 
@@ -18,10 +19,19 @@ header {
     font-size: medium;
   }
 
-  body {
+  .container{
+    margin-top: 20px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+
+  }
+
+  .general-container {
     height: 100vh;
     display: grid;
     grid-template-rows: 70px 1fr 70px;
+    
 }
   
 footer {
@@ -31,14 +41,18 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 0 700px;
+    grid-row: 3/4;
    
 }
 
 .videos{
 
     background-color: #f2d0e0;
-    height: 150px;
-    width: 150px;
+    /* height: 150px;
+    width: 150px; */
+    width: 100%;
+    height: 70%;
+    
     
     
     
