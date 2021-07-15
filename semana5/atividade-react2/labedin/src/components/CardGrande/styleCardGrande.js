@@ -12,7 +12,7 @@ const BigCardContainer = styled.div`
     img {
     width: 70px;
     margin-right: 10px;
-    border-radius: 50%;
+    border-radius: 150%;
     }
 
      h4 {
@@ -26,6 +26,6 @@ const BigCardContainer = styled.div`
     justify-items: flex-start;
     }
 
-`
+`;
 
-export default BigCardContainer
+export default BigCardContainer;

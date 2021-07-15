@@ -16,19 +16,19 @@ class App extends React.Component {
 
         <Post
           nomeUsuario={'Hugo'}
-          fotoUsuario={'https://picsum.photos/50/50'}
+          fotoUsuario={'https://picsum.photos/50/50?a=1'}
           fotoPost={'https://picsum.photos/200/150?a=1'}
         />
 
         <Post
           nomeUsuario={'Felipe'}
-          fotoUsuario={'https://picsum.photos/50/50'}
+          fotoUsuario={'https://picsum.photos/50/50?a=2'}
           fotoPost={'https://picsum.photos/200/150?a=2'}
         />
 
         <Post
           nomeUsuario={'Vini'}
-          fotoUsuario={'https://picsum.photos/50/50'}
+          fotoUsuario={'https://picsum.photos/50/50?a=3'}
           fotoPost={'https://picsum.photos/200/?a=3'}
         />
 
