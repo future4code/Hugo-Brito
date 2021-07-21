@@ -1,14 +1,17 @@
 import React from 'react';
-import './CardPequeno.css'
+import SmallCardContainer from './styleCardPequeno';
 
 function CardPequeno(props) {
     return (
-        <div className="LittleCard-container">
+
+        <SmallCardContainer>
+
             <img src={ props.imagem } />
             <div>
                 <p>{ props.descricao }</p>
             </div>
-        </div>
+
+        </ SmallCardContainer>
     )
 }
 

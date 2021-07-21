@@ -35,13 +35,13 @@ function App() {
       <div className="page-section-container">
         <h2>Experiências profissionais</h2>
         <CardGrande 
-          imagem="https://s3.amazonaws.com/future4.com.br/static/headf4-c492117ca2373dc85ca81bf715b3dc2a.png" 
+          imagem="https://media-exp3.licdn.com/dms/image/C4D0BAQEKJcexquG_Gg/company-logo_200_200/0/1625156081121?e=2159024400&v=beta&t=N6Mgk168WovaC-ukI3oq_yZkESpMsLF7EftJb3cpUlk" 
           nome="Virgin Company" 
           descricao="Analista da Virgin Galactic para captação de investimento " 
         />
         
         <CardGrande 
-          imagem="https://imagens.canaltech.com.br/empresas/4418.400.jpg" 
+          imagem="https://i.pinimg.com/originals/c1/cf/d7/c1cfd775dd9496a79ec76f89e7f8ed1d.jpg" 
           nome="Heineken Company" 
           descricao=" Analista Sr. de degustação de cerveja." 
         />
