@@ -1,113 +1,48 @@
-import react from 'react';
-import { StyledComponent } from 'styled-components';
 import axios from 'axios';
 import React from 'react';
 import { render } from '@testing-library/react';
+import CreateUser from './components/CreateUser/CreateUser';
+import ListUser from './components/ListUser/ListUser';
+import styled from 'styled-components';
 
 
+const AppStyle = styled.div`
 
-const url = 'https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users'
+  background-color: lightblue;
+  height: 100vh;
+  
 
- const headers = {
-     headers: {
-     Authorization: 'hugo-brito-lovelace'
-    }
-}
+` 
 
-export default class app extends React.Component {
 
-  state= {
+export default class App extends React.Component {
 
-    name: '',
-    inputEmail: ''
-
-  }
-
-  componentDidMount() {
-
-    this.pegarEmail()
-
-  }
-
-  changeInputEmail = (event) => {
-
-    this.setState({ inputEmailt: event.target.value })
-
-  }
-
-  catchEmail = () => { 
+  state = {
     
-    axios
-    .get(url, headers)
-    .then((res) => {
-
-      this.setState({ email: res.data.result.list })
-
-    })
-
-    .catch((err) => {
-
-      alert(err.response.data)
-
-    })
-
-    createEmail = () => {
-
-      const body = {
-
-        name: this.state.name,
-        email: this.state.inputEmail
-
-      }
-
-      axios
-        .post(url, body, headers)
-        .then((res) => {
-
-          alert('User adicioned succesfuly')
-          this.tetState({ inputEmail: ''})
-          this.catchEmail()
-        })
-
-      .catch((err) => {
-
-        alert(err.response.data.message)
-
-      })
-          
-    }
+    userRegister: [],
+    frontPage: true
   }
 
-}
+    changePage = () => {
 
-render() {
-
-  const componentsEmail = this.email.map((doit) => {
-
-  return <li key={doit.id}>{doit.name}</li> })
+      this.setState({frontPage: !this.state.frontPage})
+    }
 
 
-
+  render() {
     return (
 
-        <div>
+      <AppStyle>
 
         <h1>Labenusers</h1>
-
-        <input
-
-        value={this.state.inputEmail}
-        onChange={this.changeInputEmail}
       
-        />
+        {this.state.frontPage ? <CreateUser/> : <ListUser/>}
+        <br/>
+        <button onClick={this.changePage}>{this.state.frontPage ? 'Return List Users' : 'Return Register User'}</button>
 
-        <button onclick={this.createEmail}>Send</button>
-
-      {componentsEmail}
-
-      </div>
+       </AppStyle>
     )
-  } 
+  }
 
-
+}
 
