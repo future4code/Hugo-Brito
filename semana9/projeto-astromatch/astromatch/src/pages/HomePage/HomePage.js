@@ -1,31 +1,30 @@
 import React, { useState, useEffect } from 'react'
-import {Container} from './styled.js'
-import {ProfileImage} from './styled.js'
+import { Container } from './styled.js'
+import { ProfileImage } from './styled.js'
 import axios from 'axios'
 
 
 function HomePage(props) {
 
-    const [profile, setProfile] = useState({})
+    const [person, setPerson] = useState()
 
-    const url = "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/hugo-brito-lovelace/person"
 
-    useEffect(() => { getProfile() }, [])
+    useEffect(() => { setPerson() }, [])
 
-    const getProfile = () => {
-        axios.get(url)
-            
-            .then((res) => {
-                setProfile(res.data.profile)
-                console.log(res.data.profile)
-            })
-            .catch((err) => { console.log(err.response) })
-    }
+    const choosePerson = async (choice) => {
 
-    const [person, setPerson] = useState({})
+        const url = "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/hugo-brito-lovelace/choose-person"
 
-    const choosePerson = () => {
-        axios.get()
+        const body = {
+            id: props.profile.id,
+            choice: choice,
+        }
+        try {
+            const response = await axios.post(url, body)
+            props.getProfile()
+            console.log(response)
+        } catch (error) { console.error() }
+
     }
 
     return (
@@ -34,14 +33,14 @@ function HomePage(props) {
             <button onClick={props.changePage}>Go Match</button>
             <h1>Let's the game begin</h1>
 
-            <ProfileImage src={profile.photo}/>
+            <ProfileImage src={props.profile.photo} />
 
-            <h2>{profile.name}, {profile.age}</h2>
-            <p>{profile.bio}</p>
+            <h2>{props.profile.name}, {props.profile.age}</h2>
+            <p>{props.profile.bio}</p>
 
             <div>
-                <button onClick={choosePerson}>Yess</button>
-                <button onClick={choosePerson}>Nooo</button>
+                <button onClick={() => choosePerson(true)}>Yess</button>
+                <button onClick={() => choosePerson (false)}>Nooo</button>
             </div>
 
         </Container>

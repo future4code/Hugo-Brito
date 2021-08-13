@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 
- const Container = styled.div `
+export const Container = styled.div`
     width: 500px;
     border: 1px solid black;
 `
+export const Img = styled.img`
 
+width: 50px;
 
+`
 
-export default Container
